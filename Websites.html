@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ================================ CONFIGURACIÓN BÁSICA DEL DOCUMENTO ================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Websites — CodensFlow Studio</title>
+  <meta name="description" content="Custom websites built for performance, conversions and design. Online stores, corporate sites, service businesses.">
+  <link rel="shortcut icon" href="CodensFlow.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css?v=4">
+</head>
+
+<body>
+
+  <!-- ==================================== HEADER FIJO / NAVBAR PRINCIPAL ==================================== -->
+  <header id="header">
+    <nav class="nav">
+      <!-- LOGO -->
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="CFSL.png" alt="CodensFlow Studio" id="logo">
+        </a>
+      </div>
+
+      <!-- MENÚ PRINCIPAL -->
+      <ul class="nav-links">
+        <li class="has-submenu" data-menu="0"><a href="#">Services</a></li>
+        <li class="has-submenu" data-menu="1"><a href="#">Projects</a></li>
+        <li class="has-submenu" data-menu="2"><a href="#">About</a></li>
+        <span class="nav-indicator"></span>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#contact" class="contact-btn contact-btn-desktop">
+          <span class="btn-text">Contact</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+        <a href="#contact" class="contact-btn-mobile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c6a84f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================================== MEGA MENÚ GLOBAL ==================================== -->
+  <div class="mega-menu">
+    <div class="mega-slider">
+
+      <!-- PANEL 0 — SERVICES -->
+      <div class="mega-panel">
+        <div class="mega-column">
+          <h4>Web Development</h4>
+          <a href="Websites.html">Websites</a>
+          <a href="webapplications.html">Web Applications</a>
+          <a href="businesssoftware.html">Business Software</a>
+        </div>
+
+        <div class="mega-column">
+          <h4>UI / UX</h4>
+          <a href="#">UI Design</a>
+          <a href="#">UX Research</a>
+          <a href="#">Brand Kits</a>
+        </div>
+      </div>
+
+      <!-- PANEL 1 — PROJECTS -->
+      <div class="mega-panel">
+        <div class="mega-column">
+          <h4>Projects</h4>
+          <a href="#">Web Projects</a>
+          <a href="#">Apps</a>
+          <a href="#">Internal Tools</a>
+        </div>
+      </div>
+
+      <!-- PANEL 2 — ABOUT -->
+      <div class="mega-panel">
+        <div class="mega-column">
+          <h4>About CodensFlow</h4>
+          <a href="#">Studio</a>
+          <a href="#">Vision</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================================== WEBSITES SHOWCASE ==================================== -->
+  <section class="websites-showcase ws-premium">
+
+    <!-- HERO -->
+    <div class="ws-hero">
+      <span class="ws-badge">CREATIVE &amp; TECHNICAL</span>
+      <h1>Websites That<br><span class="ws-gradient-text">Convert &amp; Impress</span></h1>
+      <p>We design and build custom websites from scratch — no templates, no WordPress. Optimized for performance, conversions and your brand identity.</p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="ws-cards">
+
+      <div class="ws-card ws-card--store">
+        <div class="ws-card-header">
+          <span class="ws-card-badge">E-COMMERCE</span>
+          <svg class="ws-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <h3>Online Store</h3>
+        <p>E-commerce built for conversion, speed and trust. Stripe, cart, product catalog, and admin panel included.</p>
+        <ul class="ws-card-features">
+          <li>Product catalog &amp; inventory</li>
+          <li>Checkout &amp; Stripe payments</li>
+          <li>Admin dashboard</li>
+        </ul>
+      </div>
+
+      <div class="ws-card ws-card--service">
+        <div class="ws-card-header">
+          <span class="ws-card-badge">SERVICE BIZ</span>
+          <svg class="ws-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Service Business</h3>
+        <p>Warm, brand-first websites for restaurants, agencies, clinics and local businesses. Menus, reservations, galleries.</p>
+        <ul class="ws-card-features">
+          <li>Brand-focused design</li>
+          <li>Reservations &amp; contact forms</li>
+          <li>Menu &amp; gallery sections</li>
+        </ul>
+      </div>
+
+      <div class="ws-card ws-card--corporate">
+        <div class="ws-card-header">
+          <span class="ws-card-badge">CORPORATE</span>
+          <svg class="ws-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h3>Corporate Site</h3>
+        <p>Professional digital presence with scalable architecture. SEO, CMS, multi-language and analytics ready.</p>
+        <ul class="ws-card-features">
+          <li>SEO &amp; performance optimized</li>
+          <li>CMS for content updates</li>
+          <li>Analytics &amp; integrations</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- WHY US PILLS -->
+    <div class="ws-pills">
+      <span class="ws-pill">⚡ Performance-First</span>
+      <span class="ws-pill">🎨 100% Custom Design</span>
+      <span class="ws-pill">📱 Mobile-Native</span>
+      <span class="ws-pill">🔒 SEO Ready</span>
+    </div>
+
+    <div class="cta-container">
+      <button class="gold-btn" id="startBuilder"><span>Design Your Website</span></button>
+    </div>
+  </section>
+
+  <!-- ================================ WEBSITE BUILDER FLOW ================================ -->
+  <section class="builder-flow" id="builderFlow">
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <div class="step-indicator ws-step-indicator" id="stepIndicator">Step 1 of 4</div>
+    <div class="selection-history" id="selectionHistory"></div>
+
+    <!-- QUESTION CONTAINER -->
+    <div class="question-container">
+
+      <!-- STEP 0 -->
+      <div class="question-slide active" data-step="0">
+        <h2>Who is this website for?</h2>
+        <div class="options">
+          <button class="flow-option">My personal brand</button>
+          <button class="flow-option">A small business</button>
+          <button class="flow-option">A growing company</button>
+          <button class="flow-option">An established company</button>
+        </div>
+        <button class="back-btn hidden">Back</button>
+      </div>
+
+      <!-- STEP 1 -->
+      <div class="question-slide" data-step="1">
+        <h2>What do you want your website to do?</h2>
+        <div class="options">
+          <button class="flow-option">Show information</button>
+          <button class="flow-option">Generate leads</button>
+          <button class="flow-option">Sell online</button>
+          <button class="flow-option">Manage users or processes</button>
+        </div>
+        <button class="back-btn">Back</button>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="question-slide" data-step="2">
+        <h2>How customized should it be?</h2>
+        <div class="options">
+          <button class="flow-option">Simple and clean</button>
+          <button class="flow-option">Professional and modern</button>
+          <button class="flow-option">Fully custom design</button>
+          <button class="flow-option">Advanced system with dashboard</button>
+        </div>
+        <button class="back-btn">Back</button>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="question-slide" data-step="3">
+        <h2>What is your investment level?</h2>
+        <div class="options">
+          <button class="flow-option">Basic</button>
+          <button class="flow-option">Professional</button>
+          <button class="flow-option">Advanced</button>
+          <button class="flow-option">Enterprise</button>
+        </div>
+        <button class="back-btn">Back</button>
+      </div>
+
+    </div>
+
+    <!-- BUILDER COMPLETE -->
+    <div class="builder-complete" id="builderComplete">
+      <h2>You’re ready to design your website</h2>
+      <p>Your structure has been defined.</p>
+      <button class="gold-btn" id="goToBuilder">Go to Builder</button>
+    </div>
+
+  </section>
+
+  <!-- ==================================== VISUAL BUILDER ==================================== -->
+  <div class="builder-panel" id="visualBuilder">
+
+
+    <div class="builder-header ws-builder-header">
+      <span class="ws-badge" style="margin-bottom:14px;display:inline-block">VISUAL CONSTRUCTOR</span>
+      <h2 style="font-size:2rem;color:#fff;margin:0 0 8px;font-weight:700">Design Your <span class="ws-gradient-text">Navigation</span></h2>
+      <p style="color:rgba(255,255,255,0.45);font-size:0.95rem">Customize your menu, style, and effects. We capture it all for your quote.</p>
+    </div>
+
+    <div class="builder-workspace">
+
+      <!-- MOBILE TABS -->
+      <div class="builder-mobile-tabs">
+        <button class="tab-btn active" data-tab="menu">Design</button>
+        <button class="tab-btn" data-tab="preview">Preview</button>
+      </div>
+
+      <!-- LEFT SIDE -->
+      <div class="builder-card builder-menu">
+        <div class="structure-header">
+          <span class="arrow left" id="structurePrev">←</span>
+          <h3 id="structureTitle">Menu</h3>
+          <span class="arrow right" id="structureNext">→</span>
+        </div>
+
+        <!-- MENU -->
+        <div class="structure-block  active" data-structure="menu">
+          <div class="structure-section-title">Menu Settings</div>
+
+          <div class="option-group">
+            <p>Type</p>
+            <div class="option-inline">
+              <button class="mini-option active">Top</button>
+              <button class="mini-option">Left Sidebar</button>
+              <button class="mini-option">Right Sidebar</button>
+              <button class="mini-option">Bottom</button>
+            </div>
+          </div>
+
+          <div class="option-group color-control-group">
+            <p>Background Color</p>
+            <div class="color-inputs-row">
+              <div class="color-swatch-wrapper">
+                <input type="color" id="menuBgColorPicker" value="#ffffff">
+              </div>
+              <input type="text" id="menuBgColorPickerHex" value="#ffffff" class="hex-text-input" maxlength="7" spellcheck="false" autocomplete="off">
+            </div>
+            <div class="alpha-slider-row">
+              <span class="alpha-label">Opacity <span id="menuBgColorPickerAlphaText">100%</span></span>
+              <input type="range" id="menuBgColorPickerAlpha" class="alpha-slider" min="0" max="100" value="100">
+            </div>
+          </div>
+
+          <div class="option-group">
+            <p>Size</p>
+            <div class="option-inline" id="menuSizeGroup">
+              <button class="mini-option active" data-size="small">Small</button>
+              <button class="mini-option" data-size="medium">Medium</button>
+              <button class="mini-option" data-size="large">Large</button>
+            </div>
+          </div>
+        </div>
+        <!-- STYLE -->
+        <div class="structure-block" data-structure="style">
+          <div class="structure-section-title">Menu Style</div>
+
+          <div class="option-group">
+            <p>Text</p>
+            <div class="option-inline" id="menuTextToggleGroup">
+              <button class="mini-option active" data-text="on">On</button>
+              <button class="mini-option" data-text="off">Off</button>
+            </div>
+          </div>
+
+          <div class="option-group color-control-group">
+            <p>Text Color</p>
+            <div class="color-inputs-row">
+              <div class="color-swatch-wrapper">
+                <input type="color" id="menuLabelColorPicker" value="#111111">
+              </div>
+              <input type="text" id="menuLabelColorPickerHex" value="#111111" class="hex-text-input" maxlength="7" spellcheck="false" autocomplete="off">
+            </div>
+            <div class="alpha-slider-row">
+              <span class="alpha-label">Opacity <span id="menuLabelColorPickerAlphaText">100%</span></span>
+              <input type="range" id="menuLabelColorPickerAlpha" class="alpha-slider" min="0" max="100" value="100">
+            </div>
+          </div>
+
+          <div class="option-group">
+            <p>Icons</p>
+            <div class="option-inline" id="menuIconsGroup">
+              <button class="mini-option active" data-icons="on">On</button>
+              <button class="mini-option" data-icons="off">Off</button>
+            </div>
+          </div>
+
+          <div class="option-group color-control-group">
+            <p>Icon Color</p>
+            <div class="color-inputs-row">
+              <div class="color-swatch-wrapper">
+                <input type="color" id="menuIconColorPicker" value="#00aeef">
+              </div>
+              <input type="text" id="menuIconColorPickerHex" value="#00aeef" class="hex-text-input" maxlength="7" spellcheck="false" autocomplete="off">
+            </div>
+            <div class="alpha-slider-row">
+              <span class="alpha-label">Opacity <span id="menuIconColorPickerAlphaText">100%</span></span>
+              <input type="range" id="menuIconColorPickerAlpha" class="alpha-slider" min="0" max="100" value="100">
+            </div>
+          </div>
+
+          <div class="option-group">
+            <p>Icon Size</p>
+            <div class="option-inline" id="menuIconSizeGroup">
+              <button class="mini-option" data-icon-size="small">Small</button>
+              <button class="mini-option active" data-icon-size="medium">Medium</button>
+              <button class="mini-option" data-icon-size="large">Large</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- EFFECTS -->
+        <div class="structure-block" data-structure="effects">
+          <div class="structure-section-title">Menu Effects</div>
+
+          <div class="option-group">
+            <p>Hover Style</p>
+            <div class="option-inline" id="menuEffectsGroup">
+              <button class="mini-option active" data-effect="none">None</button>
+              <button class="mini-option" data-effect="underline">Underline</button>
+              <button class="mini-option" data-effect="lift">Lift</button>
+              <button class="mini-option" data-effect="glow">Glow</button>
+            </div>
+          </div>
+
+          <div class="option-group color-control-group">
+            <p>Hover Color</p>
+            <div class="color-inputs-row">
+              <div class="color-swatch-wrapper">
+                <input type="color" id="menuHoverColorPicker" value="#00aeef">
+              </div>
+              <input type="text" id="menuHoverColorPickerHex" value="#00aeef" class="hex-text-input" maxlength="7" spellcheck="false" autocomplete="off">
+            </div>
+            <div class="alpha-slider-row">
+              <span class="alpha-label">Opacity <span id="menuHoverColorPickerAlphaText">100%</span></span>
+              <input type="range" id="menuHoverColorPickerAlpha" class="alpha-slider" min="0" max="100" value="100">
+            </div>
+          </div>
+
+          <div class="option-group">
+            <p>Slide Indicator</p>
+            <div class="option-inline" id="menuSlideToggleGroup">
+              <button class="mini-option active" data-slide="off">Off</button>
+              <button class="mini-option" data-slide="on">On</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="builder-card builder-preview">
+        <div class="preview-header">
+          <div class="preview-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span class="preview-title">Preview</span>
+        </div>
+
+        <div id="previewArea">
+
+          <!-- TOP PREVIEW -->
+          <div class="preview-mode preview-top active">
+            <!-- Topbar: logo left, burger right -->
+            <div class="pv-topbar pv-topbar--top">
+              <div class="pv-logo pv-logo--left">CF</div>
+              <button class="pv-burger pv-burger-top" type="button" aria-label="Open menu">
+                <span></span><span></span><span></span>
+              </button>
+            </div>
+
+            <!-- Dropdown panel slides down from topbar -->
+            <div class="pv-top-dropdown">
+              <div class="pv-menu-item is-active">
+                <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                <span class="pv-menu-label">Home</span>
+              </div>
+              <div class="pv-menu-item">
+                <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+                <span class="pv-menu-label">Services</span>
+              </div>
+              <div class="pv-menu-item">
+                <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg></span>
+                <span class="pv-menu-label">Projects</span>
+              </div>
+              <div class="pv-menu-item">
+                <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
+                <span class="pv-menu-label">About</span>
+              </div>
+              <div class="pv-menu-item">
+                <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+                <span class="pv-menu-label">Contact</span>
+              </div>
+            </div>
+
+            <div class="pv-hero">
+              <div class="pv-hero-content">Your content will be here</div>
+            </div>
+
+            <div class="pv-footer">© CodensFlow Studio</div>
+          </div>
+
+          <!-- LEFT PREVIEW -->
+          <div class="preview-mode preview-left">
+            <div class="pv-topbar pv-topbar--mobile">
+              <button class="pv-burger pv-burger-left" type="button" aria-label="Open left menu">
+                <span></span><span></span><span></span>
+              </button>
+
+              <div class="pv-logo pv-logo--center">CF</div>
+
+              <div class="pv-burger-spacer"></div>
+            </div>
+
+            <div class="pv-drawer-overlay"></div>
+
+            <div class="pv-drawer pv-drawer-left">
+              <div class="pv-menu pv-menu-top">
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                  <span class="pv-menu-label">Home</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+                  <span class="pv-menu-label">Services</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg></span>
+                  <span class="pv-menu-label">Projects</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
+                  <span class="pv-menu-label">About</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+                  <span class="pv-menu-label">Contact</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pv-hero">
+              <div class="pv-hero-content">Your content will be here</div>
+            </div>
+
+            <div class="pv-footer">© CodensFlow Studio</div>
+          </div>
+
+          <!-- RIGHT PREVIEW -->
+          <div class="preview-mode preview-right">
+            <div class="pv-topbar pv-topbar--mobile">
+              <div class="pv-burger-spacer"></div>
+
+              <div class="pv-logo pv-logo--center">CF</div>
+
+              <button class="pv-burger pv-burger-right" type="button" aria-label="Open right menu">
+                <span></span><span></span><span></span>
+              </button>
+            </div>
+
+            <div class="pv-drawer-overlay"></div>
+
+            <div class="pv-drawer pv-drawer-right">
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                  <span class="pv-menu-label">Home</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+                  <span class="pv-menu-label">Services</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg></span>
+                  <span class="pv-menu-label">Projects</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
+                  <span class="pv-menu-label">About</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+                  <span class="pv-menu-label">Contact</span>
+                </div>
+            </div>
+
+            <div class="pv-hero">
+              <div class="pv-hero-content">Your content will be here</div>
+            </div>
+
+            <div class="pv-footer">© CodensFlow Studio</div>
+          </div>
+
+          <!-- BOTTOM PREVIEW -->
+          <div class="preview-mode preview-bottom">
+            <div class="pv-topbar pv-topbar--mobile pv-topbar--center-only">
+              <div class="pv-burger-spacer"></div>
+              <div class="pv-logo pv-logo--center">CF</div>
+              <div class="pv-burger-spacer"></div>
+            </div>
+
+            <div class="pv-hero">
+              <div class="pv-hero-content">Your content will be here</div>
+            </div>
+
+            <div class="pv-footer">© CodensFlow Studio</div>
+
+            <div class="pv-bottom-menu">
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                  <span class="pv-menu-label">Home</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+                  <span class="pv-menu-label">Services</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg></span>
+                  <span class="pv-menu-label">Projects</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
+                  <span class="pv-menu-label">About</span>
+                </div>
+                <div class="pv-menu-item">
+                  <span class="pv-menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+                  <span class="pv-menu-label">Contact</span>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DESCRIPTION SECTION -->
+    <div class="builder-description">
+      <h3>Describe your website</h3>
+      <textarea id="descriptionInput"
+        placeholder="You can describe your idea, colors, references, structure, upload inspiration, etc."></textarea>
+
+      <div class="upload-area">
+        <label class="upload-btn">
+          📎 Upload images
+          <input type="file" id="fileUpload" hidden multiple>
+        </label>
+      </div>
+    </div>
+
+    <button id="doneBtn" disabled>Done</button>
+  </div>
+
+  <!-- ==================================== REQUEST FORM ==================================== -->
+  <div class="request-form" id="requestForm">
+
+    <!-- Hero above form — matches Software style -->
+    <div class="rf-hero">
+      <span class="ws-badge" style="margin-bottom:20px;display:inline-block">WEBSITE READY</span>
+      <h2>Your Website <span class="ws-gradient-text">Profile is Ready</span></h2>
+      <p id="rfSummary">We have your profile locked in — just leave your contact info and we’ll reach out.</p>
+    </div>
+
+    <!-- Form card -->
+    <div class="rf-card">
+      <h3>Finalize Your <span class="ws-gradient-text">Request</span></h3>
+      <p class="rf-sub">Just your contact info — we already have your website profile from your selections.</p>
+
+      <input type="text" id="userName" placeholder="Your name">
+      <input type="email" id="userEmail" placeholder="Business email">
+
+      <label class="rf-check">
+        <input type="checkbox" id="acceptTerms">
+        I agree to be contacted by CodensFlow Studio
+      </label>
+
+      <button id="submitBtn" disabled>Send Website Request</button>
+      <button class="rf-back" id="backToBuilder">← Back</button>
+    </div>
+
+  </div>
+
+  <!-- ==================================== SUCCESS SCREEN ==================================== -->
+  <div class="success-screen" id="successScreen">
+    <h2>Request Received</h2>
+    <p>Our team will review your structure and contact you soon.</p>
+  </div>
+
+  <!-- ==================================== SCRIPTS ==================================== -->
+  <!-- CONTACT MODAL -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-close" id="closeModal">&times;</div>
+    <div class="flip-container" id="contactFlipContainer">
+      <div class="flipper">
+        
+        <!-- CARA FRONTAL: CONTACTO -->
+        <div class="front-face contact-face">
+          <div class="contact-header">
+            <h2>Let's build something great</h2>
+            <p>Select a channel to start a conversation with our team.</p>
+          </div>
+          <div class="contact-methods">
+            <a href="mailto:hello@codensflow.com" class="c-method mail-glow" id="secretEmailBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email Us</span>
+            </a>
+            <a href="#" class="c-method in-glow" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="c-method fb-glow" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARA TRASERA: LOGIN -->
+        <div class="back-face login-face">
+          <div class="login-panel">
+            <img src="LOGOS/Logo_CFS.png" alt="CodensFlow Staff" class="login-logo">
+            <h3>STAFF ACCESS</h3>
+            <form id="staffLoginForm" onsubmit="event.preventDefault();">
+              <div class="input-group">
+                <input type="text" placeholder="Access ID" required>
+              </div>
+              <div class="input-group">
+                <input type="password" placeholder="Passphrase" required>
+              </div>
+              <button type="submit" class="cyber-btn">Authenticate</button>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+  <div class="mobile-drawer" id="mobileDrawer">	
+    <!-- Overlay para cerrar -->	
+    <div class="drawer-overlay" id="drawerOverlay"></div>	
+	
+    <!-- Panel principal del drawer -->	
+    <div class="drawer-panel">	
+	
+      <!-- Burbujas de navegación superior -->	
+      <div class="drawer-bubbles">	
+        <button class="bubble active" data-section="0" id="bubble-0">	
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">	
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>	
+            <polyline points="9 22 9 12 15 12 15 22"/>	
+          </svg>	
+          <span>Services</span>	
+        </button>	
+        <button class="bubble" data-section="1" id="bubble-1">	
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">	
+            <rect x="2" y="3" width="20" height="14" rx="2"/>	
+            <path d="M8 21h8M12 17v4"/>	
+          </svg>	
+          <span>Projects</span>	
+        </button>	
+        <button class="bubble" data-section="2" id="bubble-2">	
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">	
+            <circle cx="12" cy="8" r="4"/>	
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>	
+          </svg>	
+          <span>About</span>	
+        </button>	
+      </div>	
+	
+      <!-- Viewport deslizable -->	
+      <div class="drawer-viewport">	
+        <!-- Sección 0: Services -->	
+        <div class="drawer-section active" data-section="0">	
+          <h3 class="section-label">Web Development</h3>	
+          <a class="drawer-link" href="Websites.html">	
+            <div class="drawer-link-icon">	
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>	
+            </div>	
+            <div class="drawer-link-text">	
+              <strong>Websites</strong>	
+              <span>Modern, fast & functional sites</span>	
+            </div>	
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>	
+          </a>	
+          <a class="drawer-link" href="webapplications.html">	
+            <div class="drawer-link-icon">	
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>	
+            </div>	
+            <div class="drawer-link-text">	
+              <strong>Web Applications</strong>	
+              <span>Custom-built for your workflow</span>	
+            </div>	
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>	
+          </a>	
+          <a class="drawer-link" href="businesssoftware.html">	
+            <div class="drawer-link-icon">	
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>	
+            </div>	
+            <div class="drawer-link-text">	
+              <strong>Business Software</strong>	
+              <span>Scalable enterprise solutions</span>	
+            </div>	
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>	
+          </a>	
+        </div>	
+	
+        <!-- Sección 1: Projects -->	
+        <div class="drawer-section" data-section="1">	
+          <h3 class="section-label">Our Work</h3>	
+          <a class="drawer-link" href="#">	
+            <div class="drawer-link-icon">	
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>	
+            </div>	
+            <div class="drawer-link-text">	
+              <strong>Web Projects</strong>	
+              <span>Sites we've built</span>	
+            </div>	
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>	
+          </a>	
+          <a class="drawer-link" href="#">	
+            <div class="drawer-link-icon">	
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/></svg>	
+            </div>	
+            <div class="drawer-link-text">	
+              <strong>Apps</strong>	
+              <span>Mobile & web applications</span>	
+            </div>	
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>	
+          </a>	
+          <a class="drawer-link" href="#">	
+            <div class="drawer-link-icon">	
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>	
+            </div>	
+            <div class="drawer-link-text">	
+              <strong>Internal Tools</strong>	
+              <span>Automation & dashboards</span>	
+            </div>	
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>	
+          </a>	
+        </div>	
+	
+        <!-- Sección 2: About -->	
+        <div class="drawer-section" data-section="2">	
+          <h3 class="section-label">CodensFlow Studio</h3>	
+          <a class="drawer-link" href="#">	
+            <div class="drawer-link-icon">	
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>	
+            </div>	
+            <div class="drawer-link-text">	
+              <strong>Studio</strong>	
+              <span>Who we are</span>	
+            </div>	
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>	
+          </a>	
+          <a class="drawer-link" href="#">	
+            <div class="drawer-link-icon">	
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>	
+            </div>	
+            <div class="drawer-link-text">	
+              <strong>Vision</strong>	
+              <span>Our mission & values</span>	
+            </div>	
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>	
+          </a>	
+          <a class="drawer-link" href="#contact">	
+            <div class="drawer-link-icon">	
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>	
+            </div>	
+            <div class="drawer-link-text">	
+              <strong>Contact</strong>	
+              <span>Start a conversation</span>	
+            </div>	
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>	
+          </a>	
+        </div>	
+      </div>	
+	
+      <!-- Footer del drawer -->	
+      <div class="drawer-footer">	
+        <span>© 2026 CodensFlow Studio</span>	
+      </div>	
+    </div>	
+  </div>	
+
+  <script src="app.js"></script>
+</body>
+
+</html>
+

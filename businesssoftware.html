@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Software — CodensFlow Studio</title>
+  <meta name="description"
+    content="Custom enterprise software engineered around your workflows. CRMs, ERPs, internal tools – built from scratch, not templates.">
+  <link rel="shortcut icon" href="CodensFlow.png">
+  <link rel="stylesheet" href="main.css?v=3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bs-page">
+
+  <!-- HEADER -->
+  <header id="header">
+    <nav class="nav">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="CFSL.png" alt="CodensFlow Studio" id="logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li class="has-submenu" data-menu="0"><a href="#">Services</a></li>
+        <li class="has-submenu" data-menu="1"><a href="#">Projects</a></li>
+        <li class="has-submenu" data-menu="2"><a href="#">About</a></li>
+        <span class="nav-indicator"></span>
+      </ul>
+      <div class="nav-cta">
+        <a href="#contact" class="contact-btn contact-btn-desktop">
+          <span class="btn-text">Contact</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+        <a href="#contact" class="contact-btn-mobile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c6a84f" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+        <button class="hamburger-btn" id="bsHamburgerBtnOverride" aria-label="Open menu" onclick="
+          var m=document.getElementById('mobileDrawer'); 
+          var o=document.getElementById('drawerOverlay');
+          m.classList.toggle('is-open'); 
+          this.classList.toggle('is-open'); 
+          document.body.style.overflow = this.classList.contains('is-open') ? 'hidden' : ''; 
+          if(o) { o.onclick = () => { m.classList.remove('is-open'); this.classList.remove('is-open'); document.body.style.overflow=''; }; }
+          event.stopPropagation();
+        ">
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+        </button>
+        <!-- Dummy button to satisfy app.js strict checks without double triggers -->
+        <div id="hamburgerBtn" style="display:none;"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MEGA MENU -->
+  <div class="mega-menu">
+    <div class="mega-slider">
+      <div class="mega-panel">
+        <div class="mega-column">
+          <h4>Web Development</h4>
+          <a href="Websites.html">Websites</a>
+          <a href="webapplications.html">Web Applications</a>
+          <a href="businesssoftware.html">Business Software</a>
+        </div>
+        <div class="mega-column">
+          <h4>UI / UX</h4>
+          <a href="#">UI Design</a>
+          <a href="#">UX Research</a>
+          <a href="#">Brand Kits</a>
+        </div>
+      </div>
+      <div class="mega-panel">
+        <div class="mega-column">
+          <h4>Projects</h4>
+          <a href="#">Web Projects</a>
+          <a href="#">Apps</a>
+          <a href="#">Internal Tools</a>
+        </div>
+      </div>
+      <div class="mega-panel">
+        <div class="mega-column">
+          <h4>About CodensFlow</h4>
+          <a href="#">Studio</a>
+          <a href="#">Vision</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main class="bs-main">
+
+    <!-- HERO HEADER -->
+    <div class="bs-hero">
+      <span class="bs-badge">ENTERPRISE GRADE</span>
+      <h1>Software Built Around<br><span class="bs-gradient-text">Your Business Logic</span></h1>
+      <p>We don't adapt your operation to generic tools. We engineer software from scratch around your exact workflows,
+        rules, and team.</p>
+    </div>
+
+    <!-- Instrucción Permanente para el Usuario (Antes del SO) -->
+    <div class="os-guide-notice" style="margin: 0 auto 30px; max-width: 600px; padding: 14px; background: rgba(0, 255, 102, 0.08); border: 1px solid #00ff66; border-radius: 6px; color: #00ff66; font-size: 0.85rem; display: flex; align-items: center; gap: 10px; box-shadow: 0 0 15px rgba(0, 255, 102, 0.15); line-height: 1.5;">
+      <div>
+          <strong>Tu Requisición:</strong> Enciende el sistema y selecciona los módulos para enviarlos como requisición a nuestro equipo. No se generará software final de forma automática.
+      </div>
+    </div>
+
+    <!-- =============================================
+         VIRTUAL OS EXPERIENCE
+         ============================================= -->
+    <div class="bs-os-scene" id="bsOsScene">
+      <div class="bs-os-laptop" id="bsOsLaptop">
+        <!-- LID / Screen -->
+        <div class="bs-os-lid" id="bsOsLid">
+          <div class="bs-os-screen">
+
+            <!-- STATE 0: Powered Off -->
+            <div class="bs-os-off" id="bsOsOffState">
+              <button class="neon-power-btn" id="bsPowerBtn" aria-label="Iniciar Configurador">
+                <span class="power-icon">&#x23FB;</span>
+              </button>
+            </div>
+
+            <!-- STATE 1: Boot Sequence -->
+            <div class="bs-os-boot" id="bsOsBootState" style="display:none;">
+              <div class="boot-text-wrap">
+                <div class="boot-text" id="bsBootText"></div>
+                <div class="boot-cursor">_</div>
+              </div>
+            </div>
+
+            <!-- STATE 2: Configurator (Step 1 & 2) -->
+            <div class="bs-os-desktop" id="bsOsDesktopState" style="display:none;">
+              <div class="os-header">
+                <div class="os-logo">CodensFlow OS</div>
+                <div class="os-steps">Step 1: Configure Features</div>
+              </div>
+
+              <!-- Step 1: Configurator App -->
+              <style>
+                /* Layout structural overrides */
+                #osConfigApp {
+                  grid-template-columns: 260px 1fr !important;
+                  grid-template-rows: 1fr auto !important;
+                  width: 100% !important;
+                }
+
+                #osConfigApp .os-app-sidebar {
+                  grid-column: 1 !important;
+                  grid-row: 1 !important;
+                  border-bottom: none !important;
+                }
+
+                #osConfigApp .os-app-content {
+                  grid-column: 2 !important;
+                  grid-row: 1 !important;
+                  width: 100% !important;
+                  box-sizing: border-box !important;
+                }
+
+                #osConfigApp .os-app-footer {
+                  grid-column: 1 / -1 !important;
+                  grid-row: 2 !important;
+                  width: 100% !important;
+                  display: flex !important;
+                  align-items: center !important;
+                  justify-content: center !important;
+                  gap: 40px !important;
+                  padding: 20px 40px !important;
+                  background: #070b14 !important;
+                  border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+                  z-index: 5 !important;
+                }
+
+                #osGeneratedApp {
+                  grid-template-columns: 260px 1fr !important;
+                  grid-template-rows: 1fr !important;
+                }
+
+                #osGeneratedApp .os-gen-sidebar {
+                  grid-column: 1;
+                  grid-row: 1;
+                }
+
+                #osGeneratedApp .os-gen-content {
+                  grid-column: 2;
+                  grid-row: 1;
+                  width: 100%;
+                  margin: 0 auto;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                }
+
+                /* Fix missing scrollbar when many modules compile */
+                .os-compiler-overlay {
+                  overflow-y: auto !important;
+                  justify-content: flex-start !important;
+                  padding-top: 20px !important;
+                  padding-bottom: 20px !important;
+                  scrollbar-width: thin;
+                  scrollbar-color: #00ff66 transparent;
+                }
+
+                @media (max-width: 768px) {
+                  #osConfigApp, #osGeneratedApp {
+                    grid-template-columns: 1fr !important;
+                    grid-template-rows: auto 1fr auto !important;
+                  }
+
+                  #osConfigApp .os-app-sidebar, #osGeneratedApp .os-gen-sidebar {
+                    grid-column: 1 !important;
+                    grid-row: 1 !important;
+                    display: flex !important;
+                    flex-direction: row !important;
+                    width: 100% !important;
+                    overflow-x: auto !important;
+                    -webkit-overflow-scrolling: touch;
+                    border-right: none !important;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+                    padding: 0 !important;
+                  }
+
+                  #osConfigApp .os-app-content, #osGeneratedApp .os-gen-content {
+                    grid-column: 1 !important;
+                    grid-row: 2 !important;
+                  }
+
+                  #osConfigApp .os-app-footer {
+                    grid-column: 1 !important;
+                    grid-row: 3 !important;
+                    flex-direction: column !important;
+                  }
+                }
+              </style>
+              <div class="os-app-window" id="osConfigApp">
+                <div class="os-app-sidebar">
+                  <button class="os-tab active" data-tab="ops">Operations (ERP)</button>
+                  <button class="os-tab" data-tab="crm">Customer Rel. (CRM)</button>
+                  <button class="os-tab" data-tab="data">Data & Analytics</button>
+                  <button class="os-tab" data-tab="auto">Automation</button>
+                </div>
+                <div class="os-app-content" id="osConfigContent">
+                  <h3 class="os-content-title" id="osTabTitle">Operations (ERP)</h3>
+                  <p class="os-content-desc" id="osTabDesc">Run your business efficiently.</p>
+                  
+                  <div class="os-modules-grid" id="osModulesGrid">
+                    <!-- Checkboxes injected by JS -->
+                  </div>
+                </div>
+                <div class="os-app-footer">
+                  <div class="os-selection-count">Selected: <span id="selCount">0</span> modules</div>
+                  <button class="cyber-btn" id="bsGenerateBtn" disabled>Generate Software</button>
+                </div>
+              </div>
+
+              <!-- Compiler Overlay (Transition 1 to 2) -->
+              <div class="os-compiler-overlay" id="osCompiler" style="display:none;">
+                <div class="compiler-spinner"></div>
+                <div>Compiling Architecture...</div>
+              </div>
+
+              <!-- Step 2: Generated App -->
+              <div class="os-app-window generated-mode" id="osGeneratedApp" style="display:none;">
+                <div class="os-gen-sidebar">
+                  <div class="os-gen-brand">
+                    <span class="bs-brand-dot"></span> OS Environment
+                  </div>
+                  <nav class="os-gen-nav" id="osGenSidebar">
+                  </nav>
+                </div>
+                <div class="os-gen-content"
+                  style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding: 40px; text-align:center;">
+                  <div class="gen-hero" style="max-width: 500px;">
+                    <span class="gen-check" style="font-size:3rem; color:#00ff66;">✓</span>
+                    <h3 style="font-size:1.8rem; margin:15px 0 10px;">Architecture Active</h3>
+                    <p style="color:rgba(255,255,255,0.6); margin-bottom:30px;">Su entorno de software está listo. Puede
+                      simular la ejecución o exportar la configuración para cotizarla.</p>
+                    <div style="display:flex; gap:16px; justify-content:center;">
+                      <button class="gold-btn export-btn" id="bsExportBtn" style="padding:12px 24px;">
+                        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            style="width:16px;height:16px;vertical-align:middle;margin-right:6px;">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                          </svg> Exportar .config</span>
+                      </button>
+                      <button id="bsRunBtn"
+                        style="background:#00c853; border:none; color:#000; padding:12px 24px; font-weight:700; border-radius:30px; cursor:pointer; font-family:'Inter', sans-serif;">
+                        ▶ Ejecutar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3: Run Simulation (Interactive Simulator) -->
+              <div class="os-app-window run-mode" id="osRunScreen" style="display:none; width:100%; height:100%; background:#070b12; flex-direction:column;">
+                
+                <!-- Loading Spinner overlay (hidden after mock load) -->
+                <div id="simLoaderOverlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:#0a0e17; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:20px; z-index:50;">
+                  <div class="spinner" style="width:40px;height:40px;border:3px solid rgba(0,255,102,0.2);border-top-color:#00ff66;border-radius:50%;animation:wsArmSpin 1s linear infinite;"></div>
+                  <div style="color:#00ff66; font-family:'JetBrains Mono', monospace; font-size:1.2rem;">Booting Workspaces...</div>
+                </div>
+
+                <!-- Main Simulator Frame -->
+                <div id="simAppFrame" style="display:none; width:100%; height:100%; position:relative;">
+                  
+                  <!-- Mobile Header (Visible only <= 768px via CSS) -->
+                  <div class="sim-mobile-header" id="simMobileHeader">
+                    <button class="sim-hamburger" id="simHamburgerBtn">☰</button>
+                    <span style="font-weight:700; color:#fff; font-size:1.1rem; letter-spacing:1px;">App Workspace</span>
+                    <button id="simOffTopBtn" style="background:transparent; border:none; color:#ff4d4d; font-size:1.2rem; cursor:pointer;" title="Power Off">⏻</button>
+                  </div>
+
+                  <!-- Flex Layout for App -->
+                  <div class="sim-layout" style="display:flex; width:100%; height:100%; flex:1; overflow:hidden;">
+                    
+                    <!-- Sidebar (Tabs of modules) -->
+                    <nav class="sim-sidebar" id="simInteractiveSidebar">
+                      <!-- Dynamically injected icons:
+                        <div class="sim-icon-btn active" title="RRHH & Nómina">👥</div>
+                      -->
+                    </nav>
+
+                    <!-- Content pane -->
+                    <main class="sim-content" id="simInteractiveContent" style="flex:1; overflow-y:auto; background:#111827; position:relative;">
+                        <!-- Dynamic mock views injected here -->
+                    </main>
+
+                  </div>
+
+                </div>
+
+                <!-- Float Back/Off Button for Desktop (hidden on mobile header) -->
+                <button id="bsBackToGenBtn" class="sim-float-off-btn" title="Detener Simulador">⏻ Turn Off</button>
+
+              </div>
+
+            </div>
+
+          </div>
+          <!-- Webcam dot -->
+          <div class="bs-webcam"></div>
+        </div>
+
+        <!-- BASE -->
+        <div class="bs-os-base"></div>
+      </div>
+
+      <!-- Export Animation Gear -->
+      <div class="export-gear" id="exportGear" style="display:none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c6a84f" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path
+            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+          </path>
+        </svg>
+      </div>
+
+    </div>
+    <!-- /bs-os-scene -->
+
+    <!-- =============================================
+         EXPORT: CONFIG FILE & REQUEST FORM (Unified)
+         ============================================= -->
+    <div class="os-export-section" id="bsExportSection" style="display:none;">
+      <h2 style="text-align:center; color:#fff; font-size: 2rem; margin-bottom: 30px;">
+        Generar <span style="color:#c6a84f">Software Blueprint</span>
+      </h2>
+      <div class="os-export-inner"
+        style="display:grid; grid-template-columns: 1fr 1.5fr; gap: 30px; align-items: stretch;">
+
+        <!-- File Format Summary -->
+        <div class="os-config-file" id="bsConfigFile"
+          style="flex-direction:column; align-items:center; justify-content:center; text-align:center;">
+          <div class="config-file-icon" style="margin-bottom:15px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c6a84f" stroke-width="1.5" width="60" height="60">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00AEEF" stroke-width="1.5" width="28" height="28"
+              class="config-gear-badge">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z">
+              </path>
+            </svg>
+          </div>
+          <div class="config-file-meta">
+            <span class="config-file-name" style="font-size:1.2rem;">architecture.config</span>
+            <span class="config-file-sub" id="bsConfigModuleCount">0 módulos seleccionados</span>
+          </div>
+          <div id="bsModNamesList"
+            style="margin-top:15px; font-family:'JetBrains Mono',monospace; color:rgba(255,255,255,0.4); font-size:0.75rem; text-align:left;">
+          </div>
+        </div>
+
+        <div class="os-export-form"
+          style="background:#0a0a0f; border:1px solid rgba(255,255,255,0.05); border-radius:16px; padding:35px;">
+          <p style="color:rgba(255,255,255,0.5); font-size:0.95rem; margin-bottom:20px;">Cuéntanos más sobre tus
+            necesidades...</p>
+          <form id="bsRequestForm" style="display:grid; grid-template-columns:1fr; gap:15px; margin-bottom:15px;"
+            onsubmit="event.preventDefault();">
+            <input type="text" id="bsNameInput" placeholder="Tu nombre" required
+              style="width:100%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:12px 16px; color:#fff; font-family:'Inter', sans-serif;">
+            <input type="email" id="bsEmailInput" placeholder="Email de negocio" required
+              style="width:100%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:12px 16px; color:#fff; font-family:'Inter', sans-serif;">
+          </form>
+          <textarea id="bsDescInput" class="os-export-textarea"
+            placeholder="Ej: Sistema de inventario para 10 empleados, con reportes automáticos..."
+            style="min-height: 90px; margin-bottom:12px; width:100%; box-sizing:border-box; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:12px 16px; color:#fff; font-family:'Inter', sans-serif;"></textarea>
+
+          <label class="bs-terms-label" for="bsTermsCheck"
+            style="display:flex; align-items:center; gap:8px; font-size:0.8rem; color:rgba(255,255,255,0.5); cursor:pointer; margin-bottom: 20px;">
+            <input type="checkbox" id="bsTermsCheck"> Acepto ser contactado por CodensFlow Studio
+          </label>
+
+          <button class="gold-btn os-export-send-btn" id="bsRequestBtn" style="width:100%;" disabled>
+            <span>Enviar Solicitud</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SUCCESS SCREEN -->
+    <div class="bs-success-wrap" id="bsSuccessWrap" style="display:none">
+      <div class="bs-success-box">
+        <div class="bs-success-pulse"></div>
+        <h2 class="bs-success-title">Blueprint Received</h2>
+        <p>We'll analyze your operation and reach out with a custom software architecture proposal within 48 hours.</p>
+        <a href="index.html" class="gold-btn" style="display:inline-block; margin-top:30px"><span>← Return
+            Home</span></a>
+      </div>
+    </div>
+
+    <!-- MAIN CTA IS NOW INTEGRATED INTO EXPORT, EXCLUDING OLD CTA -->
+
+  </main>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-close" id="closeModal">&times;</div>
+    <div class="flip-container" id="contactFlipContainer">
+      <div class="flipper">
+        <div class="front-face contact-face">
+          <div class="contact-header">
+            <h2>Let's build something great</h2>
+            <p>Select a channel to start a conversation with our team.</p>
+          </div>
+          <div class="contact-methods">
+            <a href="mailto:hello@codensflow.com" class="c-method mail-glow" id="secretEmailBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email Us</span>
+            </a>
+            <a href="#" class="c-method in-glow" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="c-method fb-glow" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+        <div class="back-face login-face">
+          <div class="login-panel">
+            <img src="LOGOS/Logo_CFS.png" alt="CodensFlow Staff" class="login-logo">
+            <h3>STAFF ACCESS</h3>
+            <form id="staffLoginForm" onsubmit="event.preventDefault();">
+              <div class="input-group"><input type="text" placeholder="Access ID" required></div>
+              <div class="input-group"><input type="password" placeholder="Passphrase" required></div>
+              <button type="submit" class="cyber-btn">Authenticate</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // ============================================================
+    // BUSINESS SOFTWARE PAGE — Interactive Logic
+    // ============================================================
+
+    // =============================================
+    // OS SIMULATOR WORKFLOW EXTENSIONS
+    // Most base OS state machine logic is handled centrally by app.js.
+    // Below are specific extensions unique to the business software page.
+    // =============================================
+
+    // Input Validation for the Unified Form
+    function bsValidateForm() {
+      const name = document.getElementById('bsNameInput');
+      const email = document.getElementById('bsEmailInput');
+      const terms = document.getElementById('bsTermsCheck');
+      const btn = document.getElementById('bsRequestBtn');
+      if (btn && name && email && terms) {
+        btn.disabled = !(name.value.trim().length > 1 && email.value.includes('@') && terms.checked);
+      }
+    }
+    document.getElementById('bsNameInput')?.addEventListener('input', bsValidateForm);
+    document.getElementById('bsEmailInput')?.addEventListener('input', bsValidateForm);
+    document.getElementById('bsTermsCheck')?.addEventListener('change', bsValidateForm);
+
+    document.getElementById('bsRequestBtn')?.addEventListener('click', function () {
+      const btn = this;
+      btn.innerHTML = '<span>Enviando...</span>';
+      setTimeout(() => {
+        if (document.getElementById('bsExportSection')) document.getElementById('bsExportSection').style.display = 'none';
+        if (document.getElementById('bsSuccessWrap')) document.getElementById('bsSuccessWrap').style.display = 'flex';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 1500);
+    });
+
+    // Eliminado el fallback problemático del drawer
+    // Custom Execution Logic Fix for 'Ejecutar' Screen
+    document.addEventListener("DOMContentLoaded", () => {
+      const bsRunBtn = document.getElementById("bsRunBtn");
+      const bsBackToGenBtn = document.getElementById("bsBackToGenBtn");
+      const simSpinner = document.getElementById("simSpinner");
+      const simText = document.getElementById("simText");
+      const simAppFrame = document.getElementById("simAppFrame");
+
+      if (bsRunBtn) {
+        bsRunBtn.addEventListener("click", () => {
+          // Reset layout for new execution
+          if (simSpinner) simSpinner.style.display = 'block';
+          if (simText) { simText.style.display = 'block'; simText.textContent = 'Executing Modules...'; }
+          if (simAppFrame) simAppFrame.style.display = 'none';
+
+          // Fetch how many modules chosen (hacky way reading from DOM since selectedModules is hidden in app.js scope)
+          const modCountText = document.getElementById("selCount") ? document.getElementById("selCount").textContent : "4";
+          const liveModCount = document.getElementById("liveModCount");
+          if (liveModCount) liveModCount.textContent = modCountText;
+
+          // Wait 2.5 seconds to show the executable software
+          setTimeout(() => {
+            if (simSpinner) simSpinner.style.display = 'none';
+            if (simText) { simText.textContent = 'System Active'; simText.style.display = 'none'; }
+            if (simAppFrame) simAppFrame.style.display = 'block';
+          }, 2500);
+        });
+      }
+
+      // Guarantee app.js doesn't break the grid system when showing the generated app
+      const osGenApp = document.getElementById("osGeneratedApp");
+      if (osGenApp) {
+        new MutationObserver((muts) => {
+          muts.forEach(m => {
+            if (osGenApp.style.display !== 'none' && osGenApp.style.display !== 'grid') {
+              osGenApp.style.display = 'grid'; // Corrects it instantly to Grid!
+            }
+          });
+        }).observe(osGenApp, { attributes: true, attributeFilter: ['style'] });
+        if (osGenApp.style.display !== 'none' && osGenApp.style.display !== '') osGenApp.style.display = 'grid';
+      }
+
+      // Guarantee osConfigApp maintains its grid nature globally when active
+      const osConfigAppMode = document.getElementById("osConfigApp");
+      if (osConfigAppMode) {
+        new MutationObserver((muts) => {
+          muts.forEach(m => {
+            if (osConfigAppMode.style.display !== 'none' && osConfigAppMode.style.display !== 'grid') {
+              osConfigAppMode.style.display = 'grid'; // Locks it strictly as grid
+            }
+          });
+        }).observe(osConfigAppMode, { attributes: true, attributeFilter: ['style'] });
+        if (osConfigAppMode.style.display !== 'none' && osConfigAppMode.style.display !== '') osConfigAppMode.style.display = 'grid';
+      }
+
+      // Auto-scroll the compiler so user sees every module finish
+      const osCompilerNode = document.getElementById("osCompiler");
+      if (osCompilerNode) {
+        new MutationObserver((muts) => {
+          muts.forEach(m => {
+            if (m.type === 'attributes' && m.attributeName === 'style') {
+              if (m.target.style.color === 'rgb(0, 255, 102)' || m.target.style.color === '#00ff66') {
+                // Focus only on the container's internal scroll, ignoring the body/window
+                osCompilerNode.scrollTo({
+                  top: osCompilerNode.scrollHeight,
+                  behavior: 'smooth'
+                });
+              }
+            }
+          });
+        }).observe(osCompilerNode, { subtree: true, attributes: true, attributeFilter: ['style'] });
+      }
+
+    });
+
+  </script>
+
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <!-- Overlay para cerrar -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Panel principal del drawer -->
+    <div class="drawer-panel">
+
+      <!-- Burbujas de navegación superior -->
+      <div class="drawer-bubbles">
+        <button class="bubble active" data-section="0" id="bubble-0">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          <span>Services</span>
+        </button>
+        <button class="bubble" data-section="1" id="bubble-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <path d="M8 21h8M12 17v4" />
+          </svg>
+          <span>Projects</span>
+        </button>
+        <button class="bubble" data-section="2" id="bubble-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+          </svg>
+          <span>About</span>
+        </button>
+      </div>
+
+      <!-- Viewport deslizable -->
+      <div class="drawer-viewport">
+        <!-- Sección 0: Services -->
+        <div class="drawer-section active" data-section="0">
+          <h3 class="section-label">Web Development</h3>
+          <a class="drawer-link" href="Websites.html">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+              </svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Websites</strong>
+              <span>Modern, fast & functional sites</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+          <a class="drawer-link" href="webapplications.html">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <line x1="12" y1="18" x2="12" y2="18" />
+              </svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Web Applications</strong>
+              <span>Custom-built for your workflow</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+          <a class="drawer-link" href="businesssoftware.html">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Business Software</strong>
+              <span>Scalable enterprise solutions</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Sección 1: Projects -->
+        <div class="drawer-section" data-section="1">
+          <h3 class="section-label">Our Work</h3>
+          <a class="drawer-link" href="#">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+              </svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Web Projects</strong>
+              <span>Sites we've built</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+          <a class="drawer-link" href="#">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+              </svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Apps</strong>
+              <span>Mobile & web applications</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+          <a class="drawer-link" href="#">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Internal Tools</strong>
+              <span>Automation & dashboards</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Sección 2: About -->
+        <div class="drawer-section" data-section="2">
+          <h3 class="section-label">CodensFlow Studio</h3>
+          <a class="drawer-link" href="#">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Studio</strong>
+              <span>Who we are</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+          <a class="drawer-link" href="#">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Vision</strong>
+              <span>Our mission & values</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+          <a class="drawer-link" href="#contact">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Contact</strong>
+              <span>Start a conversation</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer del drawer -->
+      <div class="drawer-footer">
+        <span>© 2026 CodensFlow Studio</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

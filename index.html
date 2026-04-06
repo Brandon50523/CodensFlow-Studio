@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- =========================================
+         CONFIGURACIÓN BÁSICA DEL DOCUMENTO
+         ========================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodensFlow Studio</title>
+  <link rel="shortcut icon" href="CodensFlow.png">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <!-- =========================================
+     HEADER / BARRA DE NAVEGACIÓN PRINCIPAL
+     ========================================= -->
+  <header id="header">
+    <nav class="nav">
+
+      <!-- =========================================
+         LOGO DE LA MARCA
+         ========================================= -->
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="CFSL.png" alt="CodensFlow Studio" id="logo">
+        </a>
+      </div>
+
+      <!-- =========================================
+         MENÚ PRINCIPAL DE NAVEGACIÓN (DESKTOP)
+         ========================================= -->
+      <ul class="nav-links">
+        <li class="has-submenu" data-menu="0"><a href="#">Services</a></li>
+        <li class="has-submenu" data-menu="1"><a href="#">Projects</a></li>
+        <li class="has-submenu" data-menu="2"><a href="#">About</a></li>
+        <span class="nav-indicator"></span>
+      </ul>
+
+      <!-- =========================================
+         BOTÓN CALL TO ACTION + HAMBURGER (MOBILE)
+         ========================================= -->
+      <div class="nav-cta">
+        <!-- Desktop: botón completo con fondo dorado -->
+        <a href="#contact" class="contact-btn contact-btn-desktop">
+          <span class="btn-text">Contact</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+        <!-- Mobile: solo icono sin fondo -->
+        <a href="#contact" class="contact-btn-mobile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c6a84f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+        <!-- Hamburger button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- =========================================
+     MEGA MENU GLOBAL
+     ========================================= -->
+  <div class="mega-menu">
+    <div class="mega-slider">
+
+      <!-- PANEL 0 — SERVICES -->
+      <div class="mega-panel">
+        <div class="mega-column">
+          <h4>Web Development</h4>
+          <a href="Websites.html">Websites</a>
+          <a href="webapplications.html">Web Applications</a>
+          <a href="businesssoftware.html">Business Software</a>
+        </div>
+        <div class="mega-column">
+          <h4>Innovation</h4>
+          <a href="Experiences.html">Digital Experiences</a>
+        </div>
+      </div>
+
+      <!-- PANEL 1 — PROJECTS -->
+      <div class="mega-panel">
+        <div class="mega-column">
+          <h4>Projects</h4>
+          <a href="#">Web Projects</a>
+          <a href="#">Apps</a>
+          <a href="#">Internal Tools</a>
+        </div>
+      </div>
+
+      <!-- PANEL 2 — ABOUT -->
+      <div class="mega-panel">
+        <div class="mega-column">
+          <h4>About CodensFlow</h4>
+          <a href="#">Studio</a>
+          <a href="#">Vision</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================================
+     HERO SECTION
+     ========================================= -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Design & Build Digital Experiences</h1>
+      <p>From websites to custom software, we help ideas become real products.</p>
+
+      <div class="project-flow">
+        <button class="hero-btn flow-btn main">Start a Project</button>
+        <button class="flow-btn opt" data-type="websites">Website</button>
+        <button class="flow-btn opt" data-type="apps">Web Application</button>
+        <button class="flow-btn opt" data-type="software">Business Software</button>
+        <button class="flow-btn opt" data-type="experiences">Digital Experiences</button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+     PROJECT DETAIL
+     ========================================= -->
+  <!--WEWBSITES-->
+  <section id="project-websites" class="project-detail">
+    <h2 id="project-title">Websites</h2>
+    <div class="project-animation is-websites">
+      <div class="ws-orbital-system">
+
+        <!-- Pulse rings from planet -->
+        <div class="ws-pulse-ring ws-ring-1"></div>
+        <div class="ws-pulse-ring ws-ring-2"></div>
+
+        <!-- Orbit path ring -->
+        <div class="ws-orbit-path"></div>
+
+        <!-- Planet at center -->
+        <div class="ws-planet">
+          <div class="ws-planet-equator"></div>
+          <div class="ws-planet-glow"></div>
+          <span class="ws-planet-icon">🌐</span>
+        </div>
+
+        <!-- Data packets traveling the orbit -->
+        <div class="ws-orbit-arm ws-packet-arm ws-packet-arm-1"><div class="ws-data-packet"></div></div>
+        <div class="ws-orbit-arm ws-packet-arm ws-packet-arm-2"><div class="ws-data-packet ws-packet-gold"></div></div>
+        <div class="ws-orbit-arm ws-packet-arm ws-packet-arm-3"><div class="ws-data-packet ws-packet-purple"></div></div>
+
+        <!-- Node 1: Online Store -->
+        <div class="ws-orbit-arm ws-arm-1">
+          <div class="ws-orbit-content">
+            <div class="wsb-window wsb-store">
+              <div class="wsb-chrome">
+                <span class="wsb-dot wsb-close"></span>
+                <span class="wsb-dot wsb-min"></span>
+                <span class="wsb-dot wsb-max"></span>
+                <span class="wsb-url">store.example.com</span>
+              </div>
+              <div class="wsb-body">
+                <div class="wsb-topbar">
+                  <span class="wsb-tiny">🛍 Shop &nbsp;·&nbsp; New &nbsp;·&nbsp; Sale</span>
+                </div>
+                <div class="wsb-product-grid">
+                  <div class="wsb-product">
+                    <div class="wsb-prod-img"></div>
+                    <span class="wsb-prod-tag">$89</span>
+                  </div>
+                  <div class="wsb-product">
+                    <div class="wsb-prod-img wsb-prod-img-b"></div>
+                    <span class="wsb-prod-tag">$34</span>
+                  </div>
+                  <div class="wsb-product">
+                    <div class="wsb-prod-img wsb-prod-img-c"></div>
+                    <span class="wsb-prod-tag">$52</span>
+                  </div>
+                  <div class="wsb-product">
+                    <div class="wsb-prod-img wsb-prod-img-d"></div>
+                    <span class="wsb-prod-tag">$21</span>
+                  </div>
+                </div>
+                <div class="wsb-cart-bar">
+                  <span class="wsb-tiny wsb-btn-txt">Add to Cart &rarr;</span>
+                </div>
+              </div>
+            </div>
+            <span class="wsb-label">Online Store</span>
+          </div>
+        </div>
+
+        <!-- Node 2: Service / Café -->
+        <div class="ws-orbit-arm ws-arm-2">
+          <div class="ws-orbit-content">
+            <div class="wsb-window wsb-service">
+              <div class="wsb-chrome">
+                <span class="wsb-dot wsb-close"></span>
+                <span class="wsb-dot wsb-min"></span>
+                <span class="wsb-dot wsb-max"></span>
+                <span class="wsb-url">cafe.example.com</span>
+              </div>
+              <div class="wsb-body">
+                <div class="wsb-hero-bar">
+                  <span class="wsb-tiny wsb-hero-txt">&#9749; Café Lumière</span>
+                </div>
+                <div class="wsb-menu-items">
+                  <div class="wsb-menu-item">
+                    <span class="wsb-tiny">Espresso &nbsp;·&nbsp; $3.50</span>
+                  </div>
+                  <div class="wsb-menu-item">
+                    <span class="wsb-tiny">Avocado Toast &nbsp;·&nbsp; $12</span>
+                  </div>
+                  <div class="wsb-menu-item">
+                    <span class="wsb-tiny">Brunch Set &nbsp;·&nbsp; $18</span>
+                  </div>
+                </div>
+                <div class="wsb-reserve-btn">
+                  <span class="wsb-tiny wsb-btn-txt">Reserve a Table</span>
+                </div>
+              </div>
+            </div>
+            <span class="wsb-label">Service Website</span>
+          </div>
+        </div>
+
+        <!-- Node 3: Corporate -->
+        <div class="ws-orbit-arm ws-arm-3">
+          <div class="ws-orbit-content">
+            <div class="wsb-window wsb-corporate">
+              <div class="wsb-chrome">
+                <span class="wsb-dot wsb-close"></span>
+                <span class="wsb-dot wsb-min"></span>
+                <span class="wsb-dot wsb-max"></span>
+                <span class="wsb-url">corp.example.com</span>
+              </div>
+              <div class="wsb-body">
+                <div class="wsb-corp-header">
+                  <span class="wsb-tiny">&#9642; NovaCorp &nbsp;Q1 2026</span>
+                </div>
+                <div class="wsb-stats-row">
+                  <div class="wsb-stat-box">
+                    <span class="wsb-stat-num">&uarr;140%</span>
+                    <span class="wsb-stat-lbl">Revenue</span>
+                  </div>
+                  <div class="wsb-stat-box">
+                    <span class="wsb-stat-num">12K</span>
+                    <span class="wsb-stat-lbl">Users</span>
+                  </div>
+                  <div class="wsb-stat-box">
+                    <span class="wsb-stat-num">98%</span>
+                    <span class="wsb-stat-lbl">Uptime</span>
+                  </div>
+                </div>
+                <div class="wsb-text-block">
+                  <div class="wsb-line"></div>
+                  <div class="wsb-line wsb-line-short"></div>
+                  <div class="wsb-line wsb-line-xs"></div>
+                </div>
+              </div>
+            </div>
+            <span class="wsb-label">Corporate Site</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="project-cards">
+      <div class="project-card">
+        <h4>Design</h4>
+        <p>We design modern, clean and functional websites for any type of idea.</p>
+      </div>
+      <div class="project-card">
+        <h4>Development</h4>
+        <p>Custom-built websites focused on performance and scalability.</p>
+      </div>
+      <div class="project-card">
+        <h4>Purpose</h4>
+        <p>Websites created to convert visitors into real users or clients.</p>
+      </div>
+      <div class="project-card">
+        <h4>Growth</h4>
+        <p>Web platforms prepared to grow with your business.</p>
+      </div>
+    </div>
+
+    <div class="final-cta">
+      <a href="Websites.html" class="gold-btn">
+        <span>Explore Websites</span>
+      </a>
+    </div>
+
+  </section>
+
+  <!--WEB APLICATIONS-->
+  <section id="project-apps" class="project-detail">
+    <h2 id="project-title">Web Applications</h2>
+
+    <div class="project-animation app-preview">
+
+      <div class="phone-wrap">
+        <!-- Phone frame -->
+        <div class="phone-mockup-v2" id="phoneMockup">
+          <!-- Dynamic island -->
+          <div class="phone-island"></div>
+          <!-- Side buttons -->
+          <div class="phone-btn-vol"></div>
+          <div class="phone-btn-power"></div>
+          <!-- Screen -->
+          <div class="phone-screen-v2">
+            <!-- Topbar -->
+            <div class="app-topbar">
+              <div class="app-avatar"></div>
+              <div class="app-topbar-text">
+                <div class="app-greeting"><span class="app-micro">Good morning, Alex</span></div>
+                <div class="app-subtitle"><span class="app-micro app-micro-dim">Dashboard overview</span></div>
+              </div>
+              <div class="app-notif-icon"></div>
+            </div>
+            <!-- Stats -->
+            <div class="app-stats-row">
+              <div class="app-stat-card">
+                <div class="app-stat-val"><span class="app-micro app-micro-bold">$48.2K</span></div>
+                <div class="app-stat-lbl"><span class="app-micro app-micro-dim">Revenue</span></div>
+              </div>
+              <div class="app-stat-card">
+                <div class="app-stat-val"><span class="app-micro app-micro-bold">1,240</span></div>
+                <div class="app-stat-lbl"><span class="app-micro app-micro-dim">Users</span></div>
+              </div>
+            </div>
+            <!-- Chart -->
+            <div class="app-chart-strip">
+              <div class="app-bar" style="--h:60%"></div>
+              <div class="app-bar" style="--h:85%"></div>
+              <div class="app-bar" style="--h:45%"></div>
+              <div class="app-bar" style="--h:100%"></div>
+              <div class="app-bar" style="--h:70%"></div>
+            </div>
+            <!-- List -->
+            <div class="app-list">
+              <div class="app-list-item"><div class="app-list-dot"></div><div class="app-list-line"></div></div>
+              <div class="app-list-item"><div class="app-list-dot"></div><div class="app-list-line"></div></div>
+              <div class="app-list-item"><div class="app-list-dot"></div><div class="app-list-line"></div></div>
+            </div>
+            <!-- Bottom nav -->
+            <div class="app-bottom-nav">
+              <div class="app-nav-item app-nav-active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              </div>
+              <div class="app-nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </div>
+              <div class="app-nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+              </div>
+              <div class="app-nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Glow layer behind phone -->
+        <div class="phone-glow-v2" id="phoneGlow"></div>
+      </div>
+
+      <div class="app-customizer-v2">
+        <p class="app-customizer-label">Try a theme</p>
+        <div class="color-options">
+          <span class="color-dot active" data-color="#00AEEF" data-glow="rgba(0,174,239,0.35)"></span>
+          <span class="color-dot" data-color="#7C3AED" data-glow="rgba(124,58,237,0.35)"></span>
+          <span class="color-dot" data-color="#16A34A" data-glow="rgba(22,163,74,0.35)"></span>
+          <span class="color-dot" data-color="#F59E0B" data-glow="rgba(245,158,11,0.35)"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="project-cards">
+
+      <div class="project-card">
+        <h4>Built for Your Business</h4>
+        <p>
+          Custom web applications designed around your workflow, not templates.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h4>Scalable & Secure</h4>
+        <p>
+          Applications that grow with your users, data and operations.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h4>Fast & Intuitive</h4>
+        <p>
+          Optimized for performance, usability and real-world usage.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="final-cta">
+      <a href="webapplications.html" class="gold-btn">
+        <span>Explore Applications</span>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!--BUSSINESS SOFTWARE-->
+  <section id="project-software" class="project-detail">
+
+    <h2 id="project-title">Custom Business Software</h2>
+
+    <!-- LAPTOP SCENE — Inserted from businesssoftware -->
+    <div class="bs-scene">
+
+      <!-- SKILL CARDS — Around the laptop -->
+      <div class="bs-skill-cards">
+        <div class="bs-skill top-left">
+          <span class="bs-skill-icon">⬡</span>
+          <div>
+            <strong>Custom Modules</strong>
+            <p>Every feature built for your exact use case</p>
+          </div>
+        </div>
+        <div class="bs-skill top-right">
+          <span class="bs-skill-icon">⬡</span>
+          <div>
+            <strong>Role-Based Access</strong>
+            <p>Granular permissions per user and department</p>
+          </div>
+        </div>
+        <div class="bs-skill mid-left">
+          <span class="bs-skill-icon">⬡</span>
+          <div>
+            <strong>Real-Time Reports</strong>
+            <p>Live dashboards with actionable KPIs</p>
+          </div>
+        </div>
+        <div class="bs-skill mid-right">
+          <span class="bs-skill-icon">⬡</span>
+          <div>
+            <strong>API Integrations</strong>
+            <p>Connects to Stripe, Slack, HubSpot & more</p>
+          </div>
+        </div>
+        <div class="bs-skill bot-left">
+          <span class="bs-skill-icon">⬡</span>
+          <div>
+            <strong>Automated Billing</strong>
+            <p>Invoice generation, reminders, and tracking</p>
+          </div>
+        </div>
+        <div class="bs-skill bot-right">
+          <span class="bs-skill-icon">⬡</span>
+          <div>
+            <strong>Offline Mode</strong>
+            <p>Critical workflows available without internet</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LAPTOP MOCKUP -->
+      <div class="bs-laptop-wrap">
+        <div class="bs-laptop">
+
+          <!-- LID / Screen -->
+          <div class="bs-lid">
+            <div class="bs-screen">
+
+              <!-- STATE 1: Windows Desktop -->
+              <div class="bs-win-desktop" id="bsDesktop">
+                <div class="bs-win-wallpaper"></div>
+
+                <!-- App Icons on Desktop -->
+                <div class="bs-desktop-icons">
+                  <div class="bs-app-icon" id="bsLaunchErp">
+                    <div class="bs-icon-box">
+                      <span class="bs-icon-label-top">ERP</span>
+                      <span class="bs-icon-version">v1.0</span>
+                    </div>
+                    <span class="bs-icon-name">CodensFlow ERP<br><em>Agency Manager BETA</em></span>
+                  </div>
+                  <div class="bs-app-icon bs-icon-disabled">
+                    <div class="bs-icon-box bs-icon-locked">
+                      <span class="bs-icon-label-top">FIN</span>
+                      <span class="bs-icon-version">v0.9</span>
+                    </div>
+                    <span class="bs-icon-name">Finance Suite<br><em>Coming Soon</em></span>
+                  </div>
+                </div>
+
+                <!-- Hint -->
+                <div class="bs-hint-text" id="bsHintText">↑ Double-click to launch</div>
+
+                <!-- Windows Taskbar -->
+                <div class="bs-taskbar">
+                  <div class="bs-taskbar-start">
+                    <span class="bs-win-logo">⊞</span>
+                    <span class="bs-taskbar-label">CodensFlow OS</span>
+                  </div>
+                  <div class="bs-taskbar-center">
+                    <span class="bs-taskbar-app" id="bsTaskbarApp" style="display:none">
+                      <span class="bs-app-dot"></span> CodensFlow ERP — BETA
+                    </span>
+                  </div>
+                  <div class="bs-taskbar-clock" id="bsClock">--:--</div>
+                </div>
+              </div>
+
+              <!-- STATE 2: App Window -->
+              <div class="bs-app-window" id="bsAppWindow" style="display:none">
+
+                <!-- Window Chrome (Title Bar) -->
+                <div class="bs-win-chrome">
+                  <div class="bs-chrome-left">
+                    <span class="bs-win-ctrl bs-ctrl-close" onclick="bsCloseApp()"></span>
+                    <span class="bs-win-ctrl bs-ctrl-min"></span>
+                    <span class="bs-win-ctrl bs-ctrl-max"></span>
+                  </div>
+                  <div class="bs-chrome-title">
+                    <span class="bs-chrome-icon">▣</span>
+                    CodensFlow ERP 1.0 BETA &nbsp;|&nbsp; Agency Manager
+                  </div>
+                  <div class="bs-chrome-right">
+                    <span class="bs-win-badge">BETA</span>
+                  </div>
+                </div>
+
+                <!-- App Layout -->
+                <div class="bs-app-layout">
+
+                  <!-- Sidebar -->
+                  <aside class="bs-sidebar">
+                    <div class="bs-sidebar-brand">
+                      <span class="bs-brand-dot"></span>
+                      CFS Agency
+                    </div>
+                    <nav class="bs-sidenav">
+                      <button class="bs-nav-item active" data-module="dashboard" onclick="bsLoadModule(this)">
+                        <span class="bs-nav-icon">◈</span> Dashboard
+                      </button>
+                      <button class="bs-nav-item" data-module="projects" onclick="bsLoadModule(this)">
+                        <span class="bs-nav-icon">◫</span> Projects
+                      </button>
+                      <button class="bs-nav-item" data-module="clients" onclick="bsLoadModule(this)">
+                        <span class="bs-nav-icon">◉</span> Clients
+                      </button>
+                      <button class="bs-nav-item" data-module="billing" onclick="bsLoadModule(this)">
+                        <span class="bs-nav-icon">◈</span> Billing
+                      </button>
+                      <button class="bs-nav-item" data-module="reports" onclick="bsLoadModule(this)">
+                        <span class="bs-nav-icon">◫</span> Reports
+                      </button>
+                    </nav>
+                    <div class="bs-sidebar-footer">
+                      <span class="bs-status-dot"></span> System Online
+                    </div>
+                  </aside>
+
+                  <!-- Main Content Area -->
+                  <div class="bs-content" id="bsContent">
+                    <!-- Filled by JS -->
+                  </div>
+
+                </div>
+
+                <!-- Taskbar inside app -->
+                <div class="bs-taskbar">
+                  <div class="bs-taskbar-start">
+                    <span class="bs-win-logo">⊞</span>
+                    <span class="bs-taskbar-label">CodensFlow OS</span>
+                  </div>
+                  <div class="bs-taskbar-center">
+                    <span class="bs-taskbar-app">
+                      <span class="bs-app-dot"></span> CodensFlow ERP — BETA
+                    </span>
+                  </div>
+                  <div class="bs-taskbar-clock" id="bsClock2">--:--</div>
+                </div>
+
+              </div>
+              <!-- /STATE 2 -->
+
+            </div>
+            <!-- Webcam dot -->
+            <div class="bs-webcam"></div>
+          </div>
+
+          <!-- BASE — Clean flat MacBook-style -->
+          <div class="bs-base"></div>
+
+        </div>
+        <!-- /bs-laptop -->
+      </div>
+      <!-- /bs-laptop-wrap -->
+
+    </div>
+    <!-- /bs-scene -->
+
+
+
+    <div class="project-cards">
+      <div class="project-card">
+        <h4>Tailored Business Software</h4>
+        <p>
+          We build software designed specifically around your workflows,
+          not generic tools that force you to adapt.
+        </p>
+      </div>
+      <div class="project-card">
+        <h4>Scalable by Design</h4>
+        <p>
+          Start small and expand your system as your operation grows.
+          Add modules without rebuilding everything.
+        </p>
+      </div>
+      <div class="project-card">
+        <h4>Automation & Control</h4>
+        <p>
+          Reduce manual work, improve accuracy, and gain real-time visibility
+          across your business processes.
+        </p>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="final-cta">
+      <a href="businesssoftware.html" class="gold-btn">
+          <span>Explore Software</span>
+        </a>
+    </div>
+
+  </section>
+
+
+
+  <!--EXPERIENCES DIGITALES-->
+  <section id="project-experiences" class="project-detail" data-lab-ready="false">
+
+    <!-- Particle Canvas (experiences lab) -->
+    <canvas id="idx-particleCanvas" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0; pointer-events:none;"></canvas>
+
+    <!-- Lab UI overlay -->
+    <div id="idx-labContainer" style="position:relative; z-index:10; width:100%; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:35px; padding:110px 20px 60px;">
+
+      <!-- Brand -->
+      <div class="exp-brand" style="text-align:center;">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:0.7rem; letter-spacing:4px; color:rgba(255,255,255,0.3); text-transform:uppercase; margin-bottom:8px;">Innovation Lab</div>
+        <h2 style="font-size:clamp(1.4rem,3vw,2.2rem); font-weight:300; color:rgba(255,255,255,0.9);">Elige tu <span style="font-weight:700; background:linear-gradient(90deg,#00AEEF,#00ff66); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Experiencia</span></h2>
+      </div>
+
+      <!-- Cards -->
+      <div class="exp-selector">
+
+        <!-- Virtual OS Card -->
+        <div class="exp-card card-os" id="idx-cardOS">
+          <div class="exp-badge">PRÓXIMAMENTE</div>
+          <div class="exp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4"/>
+              <circle cx="12" cy="10" r="2"/>
+              <path d="M7 10h1M16 10h1M12 6v1M12 13v1"/>
+            </svg>
+          </div>
+          <div class="exp-card-tag">Experience 01</div>
+          <h3 class="exp-card-title">Virtual OS</h3>
+          <p class="exp-card-desc" style="font-size:0.8rem;">Escritorio virtual, instala apps y acceso remoto desde tu navegador.</p>
+        </div>
+
+        <!-- Interactive AI Card -->
+        <div class="exp-card card-ai" id="idx-cardAI">
+          <div class="exp-badge">PRÓXIMAMENTE</div>
+          <div class="exp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="5" r="2"/>
+              <circle cx="5" cy="19" r="2"/>
+              <circle cx="19" cy="19" r="2"/>
+              <circle cx="12" cy="12" r="2.5"/>
+              <path d="M12 7v3M7 18l3.5-2.5M16.5 15.5L13 18"/>
+            </svg>
+          </div>
+          <div class="exp-card-tag">Experience 02</div>
+          <h3 class="exp-card-title">Interactive AI</h3>
+          <p class="exp-card-desc" style="font-size:0.8rem;">Conversa con nuestro robot IA de nueva generación en tiempo real.</p>
+        </div>
+
+      </div>
+
+      <!-- Teaser -->
+      <div style="text-align:center; max-width:420px;">
+        <p id="idx-teaserText" style="font-size:0.78rem; color:rgba(255,255,255,0.28); font-family:'JetBrains Mono',monospace; line-height:1.8;"></p><span style="display:inline-block; width:2px; height:13px; background:rgba(0,174,239,0.6); margin-left:3px; vertical-align:middle; animation:cursorBlink 1.1s steps(2) infinite;"></span>
+      </div>
+
+    </div>
+
+    <!-- Particle Text Overlay -->
+    <div id="idx-particleTextOverlay" style="position:absolute; inset:0; z-index:5; display:none; align-items:center; justify-content:center; flex-direction:column; gap:20px; pointer-events:none;">
+      <span id="idx-overlaySubtitle" style="font-family:'JetBrains Mono',monospace; font-size:0.9rem; letter-spacing:6px; color:#fff; text-transform:uppercase; font-weight:500;"></span>
+    </div>
+
+    <!-- Back Button -->
+    <button id="idx-overlayBackBtn" style="display:none; position:absolute; bottom:25px; left:50%; transform:translateX(-50%); background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); color:rgba(255,255,255,0.55); padding:10px 26px; border-radius:30px; font-family:'Inter',sans-serif; font-size:0.82rem; cursor:pointer; z-index:20; transition:all 0.3s;">← Volver al Lab</button>
+
+  </section>
+
+  <!--FINAL DE LAS ANIMACIONES-->
+
+
+
+  <footer class="site-footer">
+    <p>© 2026 Brandon — All rights reserved.</p>
+  </footer>
+
+
+
+  <!-- CONTACT MODAL -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-close" id="closeModal">&times;</div>
+    <div class="flip-container" id="contactFlipContainer">
+      <div class="flipper">
+        
+        <!-- CARA FRONTAL: CONTACTO -->
+        <div class="front-face contact-face">
+          <div class="contact-header">
+            <h2>Let's build something great</h2>
+            <p>Select a channel to start a conversation with our team.</p>
+          </div>
+          <div class="contact-methods">
+            <a href="mailto:hello@codensflow.com" class="c-method mail-glow" id="secretEmailBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email Us</span>
+            </a>
+            <a href="#" class="c-method in-glow" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="c-method fb-glow" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARA TRASERA: LOGIN -->
+        <div class="back-face login-face">
+          <div class="login-panel">
+            <img src="LOGOS/Logo_CFS.png" alt="CodensFlow Staff" class="login-logo">
+            <h3>STAFF ACCESS</h3>
+            <form id="staffLoginForm" onsubmit="event.preventDefault();">
+              <div class="input-group">
+                <input type="text" placeholder="Access ID" required>
+              </div>
+              <div class="input-group">
+                <input type="password" placeholder="Passphrase" required>
+              </div>
+              <button type="submit" class="cyber-btn">Authenticate</button>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================
+     MOBILE DRAWER MENU
+     ========================================= -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <!-- Overlay para cerrar -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Panel principal del drawer -->
+    <div class="drawer-panel">
+
+      <!-- Burbujas de navegación superior -->
+      <div class="drawer-bubbles">
+        <button class="bubble active" data-section="0" id="bubble-0">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <span>Services</span>
+        </button>
+        <button class="bubble" data-section="1" id="bubble-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <path d="M8 21h8M12 17v4"/>
+          </svg>
+          <span>Projects</span>
+        </button>
+        <button class="bubble" data-section="2" id="bubble-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+          <span>About</span>
+        </button>
+      </div>
+
+      <!-- Viewport deslizable -->
+      <div class="drawer-viewport">
+        <!-- Sección 0: Services -->
+        <div class="drawer-section active" data-section="0">
+          <h3 class="section-label">Web Development</h3>
+          <a class="drawer-link" href="Websites.html">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Websites</strong>
+              <span>Modern, fast & functional sites</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+          <a class="drawer-link" href="webapplications.html">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Web Applications</strong>
+              <span>Custom-built for your workflow</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+          <a class="drawer-link" href="businesssoftware.html">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Business Software</strong>
+              <span>Scalable enterprise solutions</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+        </div>
+
+        <!-- Sección 1: Projects -->
+        <div class="drawer-section" data-section="1">
+          <h3 class="section-label">Our Work</h3>
+          <a class="drawer-link" href="#">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Web Projects</strong>
+              <span>Sites we've built</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+          <a class="drawer-link" href="#">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/></svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Apps</strong>
+              <span>Mobile & web applications</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+          <a class="drawer-link" href="#">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Internal Tools</strong>
+              <span>Automation & dashboards</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+        </div>
+
+        <!-- Sección 2: About -->
+        <div class="drawer-section" data-section="2">
+          <h3 class="section-label">CodensFlow Studio</h3>
+          <a class="drawer-link" href="#">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Studio</strong>
+              <span>Who we are</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+          <a class="drawer-link" href="#">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Vision</strong>
+              <span>Our mission & values</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+          <a class="drawer-link" href="#contact">
+            <div class="drawer-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="drawer-link-text">
+              <strong>Contact</strong>
+              <span>Start a conversation</span>
+            </div>
+            <svg class="drawer-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer del drawer -->
+      <div class="drawer-footer">
+        <span>© 2026 CodensFlow Studio</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="experiences-embedded.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodensFlow — Innovation Lab</title>
+  <meta name="description" content="CodensFlow Innovation Lab — Explore our Virtual OS and Interactive AI experiences.">
+  <link rel="shortcut icon" href="CodensFlow.png">
+  <link rel="stylesheet" href="experiences.css">
+</head>
+
+<body>
+
+  <!-- Canvas: Particle Background -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navigation Back Link -->
+  <a href="index.html" id="expNavBack" style="
+    position: fixed; top: 28px; left: 28px; z-index: 100;
+    display: flex; align-items: center; gap: 8px;
+    color: rgba(255,255,255,0.4); font-family:'Inter',sans-serif;
+    font-size: 0.82rem; text-decoration: none;
+    transition: color 0.3s ease;
+  " onmouseover="this.style.color='rgba(255,255,255,0.9)'"
+     onmouseout="this.style.color='rgba(255,255,255,0.4)'">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    CodensFlow Studio
+  </a>
+
+  <!-- Logo centered top -->
+  <div style="position:fixed; top:22px; left:50%; transform:translateX(-50%); z-index:100; opacity:0.55; pointer-events:none;">
+    <img src="CFSL.png" alt="CodensFlow" style="height: 30px; filter: brightness(0) invert(1);">
+  </div>
+
+  <!-- Main Lab Container -->
+  <div id="labContainer">
+
+    <!-- Brand Header -->
+    <div class="exp-brand">
+      <div class="exp-brand-label">Innovation Lab</div>
+      <h1 class="exp-brand-title">Elige tu <span>Experiencia</span></h1>
+    </div>
+
+    <!-- Experience Selector Cards -->
+    <div class="exp-selector">
+
+      <!-- Card 1: Virtual OS -->
+      <div class="exp-card card-os" id="cardOS">
+        <div class="exp-badge">PRÓXIMAMENTE</div>
+
+        <div class="exp-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <path d="M8 21h8M12 17v4"/>
+            <circle cx="12" cy="10" r="2"/>
+            <path d="M7 10h1M16 10h1M12 6v1M12 13v1M8.5 7.5l.7.7M15.5 7.5l-.7.7M8.5 12.5l.7-.7M15.5 12.5l-.7-.7"/>
+          </svg>
+        </div>
+
+        <div class="exp-card-tag">Experience 01</div>
+        <h2 class="exp-card-title">Virtual<br>Operating System</h2>
+        <p class="exp-card-desc">Instala software, navega el escritorio y conéctate de forma remota — todo desde tu navegador.</p>
+      </div>
+
+      <!-- Card 2: Interactive AI -->
+      <div class="exp-card card-ai" id="cardAI">
+        <div class="exp-badge">PRÓXIMAMENTE</div>
+
+        <div class="exp-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="5" r="2"/>
+            <circle cx="5" cy="19" r="2"/>
+            <circle cx="19" cy="19" r="2"/>
+            <circle cx="12" cy="12" r="2.5"/>
+            <path d="M12 7v3M7 18l3.5-2.5M16.5 15.5L13 18"/>
+            <path d="M5 17V9a7 7 0 0 1 14 0v8"/>
+          </svg>
+        </div>
+
+        <div class="exp-card-tag">Experience 02</div>
+        <h2 class="exp-card-title">Interactive<br>Intelligence</h2>
+        <p class="exp-card-desc">Conversa con nuestro robot IA de nueva generación. Responde en tiempo real con personalidad propia.</p>
+      </div>
+
+    </div>
+
+    <!-- Typewriter Teaser -->
+    <div class="exp-teaser">
+      <p id="teaserText"></p><span class="cursor-blink"></span>
+    </div>
+
+  </div>
+
+  <!-- Particle Text Overlay (shown on card click) -->
+  <div id="particleTextOverlay">
+    <span class="overlay-subtitle" id="overlaySubtitle"></span>
+  </div>
+
+  <!-- Back Button -->
+  <button class="overlay-back-btn" id="overlayBackBtn">← Volver al Lab</button>
+
+  <script src="experiences.js"></script>
+
+</body>
+
+</html>
